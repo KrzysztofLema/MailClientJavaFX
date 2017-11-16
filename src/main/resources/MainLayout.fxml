@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnCompose" layoutX="50.0" layoutY="31.0" mnemonicParsing="false" text="Compose" />
+      <TableView fx:id="emailTableView" layoutX="243.0" layoutY="81.0" prefHeight="165.0" prefWidth="672.0" AnchorPane.leftAnchor="243.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="81.0">
+         <columns>
+            <TableColumn fx:id="subjectICol" prefWidth="252.0" text="Subject" />
+            <TableColumn fx:id="senderCol" minWidth="0.0" prefWidth="183.0" text="Sender" />
+            <TableColumn fx:id="sizeCol" prefWidth="60.0" text="Size" />
+            <TableColumn fx:id="dateCol" prefWidth="240.0" text="Date" />
+         </columns></TableView>
+      <TreeView fx:id="emailFoldersTreeView" layoutX="10.0" layoutY="81.0" prefHeight="444.0" prefWidth="233.0" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="81.0" />
+      <WebView fx:id="messageRenderer" layoutX="243.0" layoutY="247.0" prefHeight="278.0" prefWidth="672.0" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="243.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="247.0" />
+      <Button fx:id="downAttachbtn" layoutX="630.0" layoutY="31.0" mnemonicParsing="false" onAction="#downAttachBtnAction" prefHeight="25.0" prefWidth="153.0" text="Download attachments" />
+      <Label fx:id="downloadingAtachmentsLabel" layoutX="826.0" layoutY="19.0" prefHeight="25.0" prefWidth="140.0" text="Label" />
+      <ProgressBar fx:id="downAtachmentsProgress" layoutX="801.0" layoutY="47.0" prefHeight="17.0" prefWidth="165.0" progress="0.0" />
+   </children>
+</AnchorPane>
